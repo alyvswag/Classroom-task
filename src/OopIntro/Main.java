@@ -9,16 +9,16 @@ public class Main {
 
         while(true) {
             System.out.print("Masinin adin daxil edin: ");
-            String make = scanner.nextLine();
+            String make = scanner.next();
             System.out.print("Masinin modelin daxil edin: ");
-            String model = scanner.nextLine();
+            String model = scanner.next();
             System.out.print("Masinin buraxilis ilin daxil edin: ");
-            int year =Integer.parseInt(scanner.nextLine()) ;
+            int year =scanner.nextInt() ;
             Car c = new Car(make, model, year);
             c.displayInfo();
             System.out.println(" ");
             System.out.print("Yeni masin elave etmek isteyirsiniz?(beli,xeyr): ");
-            String istifadeciSecimi = scanner.nextLine();
+            String istifadeciSecimi = scanner.next();
             if(!istifadeciSecimi.equals("beli")){
                 break;
             }
