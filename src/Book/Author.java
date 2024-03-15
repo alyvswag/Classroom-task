@@ -1,26 +1,14 @@
-package OopTeacherStudentConsole;
+package Book;
 
-public class Student {
-    private long id;
+public class Author {
     private String name;
     private String surname;
-    private String birthDate;
     private String email;
 
-    public Student(long id, String name, String surname, String birthDate, String email) {
-        this.id = id;
+    public Author(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
-        this.birthDate = birthDate;
         this.email = email;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -37,14 +25,6 @@ public class Student {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public String getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
     }
 
     public String getEmail() {

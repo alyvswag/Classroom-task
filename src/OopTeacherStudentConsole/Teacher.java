@@ -7,6 +7,14 @@ public class Teacher {
         private String birthDate;
         private String email;
 
+    public Teacher(long id, String name, String surname, String birthDate, String email) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.birthDate = birthDate;
+        this.email = email;
+    }
+
     public long getId() {
         return id;
     }
